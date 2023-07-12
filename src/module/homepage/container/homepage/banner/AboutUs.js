@@ -6,7 +6,7 @@ export default function AboutUs() {
   return (
     <>
     <Wrapper>
-      <h5 className='sub-title'>Features</h5>
+      <h5 className='sub-title'>About Us</h5>
       <div className="main">
 
         <div className="left">
@@ -35,6 +35,8 @@ background-color: #4CD0E9;
   gap: 3vw;
   justify-content: center;
   align-items: center;
+  padding: 50px 0;
+
   .left{
     width: 50%;
     padding: 2vw;

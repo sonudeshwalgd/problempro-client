@@ -16,7 +16,7 @@ export default function HomepageNavbar() {
             isPending ? "pending" : isActive ? "active" : ""
           }
         >
-          <img src={logo} />
+          <img style={{visibility:"hidden"}} src={logo} />
         </NavLink>
         <ul>
   
