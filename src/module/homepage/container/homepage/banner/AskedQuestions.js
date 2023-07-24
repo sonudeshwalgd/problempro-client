@@ -76,8 +76,7 @@ export default function AskedQuestions() {
                     </AccordionDetails>
                 </Accordion>
                 </div>
- 
-            </div>
+             </div>
 
         </div>
 
