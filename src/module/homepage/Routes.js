@@ -24,7 +24,7 @@ export  function HomePageOutlet() {
           <HomepageNavbar/>
         </Main>
         <Outlet/>
-        {/* <Footer/> */}
+        <Footer/>
     
     </>
   )

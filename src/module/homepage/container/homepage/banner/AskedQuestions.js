@@ -19,10 +19,10 @@ export default function AskedQuestions() {
                     aria-controls="panel1a-content"
                     id="panel1a-header"
                     >
-                    <Typography sx={{fontSize:"30px" ,color:"black", fontWeight:"500"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</Typography>
+                    <Typography sx={{fontSize:"24px" ,color:"black", fontWeight:"500"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</Typography>
                     </AccordionSummary>
                     <AccordionDetails>
-                    <Typography sx={{fontSize:"20px"}}>
+                    <Typography sx={{fontSize:"16px"}}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed neque eu lectus interdum pharetra. Donec gravida faucibus ex, sit amet sagittis mauris porta a. Morbi tincidunt in purus vel pellentesque.
                     </Typography>
                     </AccordionDetails>
@@ -35,10 +35,10 @@ export default function AskedQuestions() {
                     aria-controls="panel1a-content"
                     id="panel1a-header"
                     >
-                    <Typography sx={{fontSize:"30px" ,color:"black", fontWeight:"500"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</Typography>
+                    <Typography sx={{fontSize:"24px" ,color:"black", fontWeight:"500"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</Typography>
                     </AccordionSummary>
                     <AccordionDetails>
-                    <Typography sx={{fontSize:"20px"}}>
+                    <Typography sx={{fontSize:"16px"}}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed neque eu lectus interdum pharetra. Donec gravida faucibus ex, sit amet sagittis mauris porta a. Morbi tincidunt in purus vel pellentesque.
                     </Typography>
                     </AccordionDetails>
@@ -51,10 +51,10 @@ export default function AskedQuestions() {
                     aria-controls="panel1a-content"
                     id="panel1a-header"
                     >
-                    <Typography sx={{fontSize:"30px" ,color:"black", fontWeight:"500"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</Typography>
+                    <Typography sx={{fontSize:"24px" ,color:"black", fontWeight:"500"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</Typography>
                     </AccordionSummary>
                     <AccordionDetails>
-                    <Typography sx={{fontSize:"20px"}}>
+                    <Typography sx={{fontSize:"16px"}}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed neque eu lectus interdum pharetra. Donec gravida faucibus ex, sit amet sagittis mauris porta a. Morbi tincidunt in purus vel pellentesque.
                     </Typography>
                     </AccordionDetails>
@@ -67,10 +67,10 @@ export default function AskedQuestions() {
                     aria-controls="panel1a-content"
                     id="panel1a-header"
                     >
-                    <Typography sx={{fontSize:"30px" ,color:"black", fontWeight:"500"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</Typography>
+                    <Typography sx={{fontSize:"24px" ,color:"black", fontWeight:"500"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</Typography>
                     </AccordionSummary>
                     <AccordionDetails>
-                    <Typography sx={{fontSize:"20px"}}>
+                    <Typography sx={{fontSize:"16px"}}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed neque eu lectus interdum pharetra. Donec gravida faucibus ex, sit amet sagittis mauris porta a. Morbi tincidunt in purus vel pellentesque.
                     </Typography>
                     </AccordionDetails>
@@ -89,6 +89,8 @@ const Wrapper=styled.div`
 width: 100vw;
 position: relative;
 padding-bottom: 92px;
+padding: 92px 16px;
+
 .main{
     max-width: 1440px;
     margin: auto;
@@ -97,7 +99,7 @@ padding-bottom: 92px;
         flex-direction: column;
         gap: 25px;
         .accordian{
-            max-width: 1030px;
+            max-width: 1024px;
             margin: auto;
         }
 
@@ -109,7 +111,6 @@ padding-bottom: 92px;
             font-size: 48px;
             text-align: center;
             margin: auto;
-            padding: 92px 20px;
             padding-bottom:0 ;
             margin-bottom: 92px;
             width: max-content;
@@ -126,7 +127,7 @@ padding-bottom: 92px;
             }
 }
 .MuiPaper-elevation{
-    border-radius: 30px !important;
+    border-radius: 24px !important;
 }
 
 

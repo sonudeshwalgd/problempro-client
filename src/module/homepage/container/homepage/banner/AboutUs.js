@@ -1,14 +1,15 @@
 import React from 'react'
 import { styled } from 'styled-components'
 import img from "./../../../../../assets/images/homepage/Recruiting advertisement.png"
+import background from "./../../../../../assets/images/homepage/aboutus.png"
 
 export default function AboutUs() {
   return (
     <>
     <Wrapper>
-      <h5 className='sub-title'>About Us</h5>
       <div className="main">
-
+      <h5 className='sub-title'>About Us</h5>
+      <div className="body">
         <div className="left">
           <img className='img' src={img} alt="" />
         </div>
@@ -18,24 +19,35 @@ export default function AboutUs() {
           </p>
         </div>
       </div>
+      </div>
     </Wrapper>
     </>
   )
 }
 
 const Wrapper=styled.div`
-width: 100vw;
+/* width: 100vw; */
 position: relative;
-background-color: #4CD0E9;
+/* background-color: #4CD0E9; */
+background-image: url(${background});
+margin-top: -110px;
+padding: 92px 0;
 
 .main{
   max-width:1440px;
   margin: auto;
-  display: flex;
-  gap: 3vw;
-  justify-content: center;
-  align-items: center;
-  padding: 50px 0;
+  background-color: #5CDAF1;
+  border-radius: 10px;
+  margin: 0 180px;
+  margin-top: 110px;
+  .body{
+    display: flex;
+    /* gap: 3vw; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+  }
 
   .left{
     width: 50%;
@@ -49,9 +61,9 @@ background-color: #4CD0E9;
   .right{
     width: 50%;
     position: relative;
-    padding: 4vw;
+    padding: 2vw;
     p{
-      font-size: 30px;
+      font-size: 26px;
       color: white;
       max-width: 600px;
     }
@@ -63,14 +75,13 @@ background-color: #4CD0E9;
             font-size: 48px;
             text-align: center;
             margin: auto;
-            padding: 0 20px;
-            padding-top: 92px;
+            padding: 20px;
             width: max-content;
             position: relative;
             &::after{
               content: "";
               position: absolute;
-              bottom: -8px;
+              bottom: 12px;
               left: 0;
               width: 100%;
               height: 4px;

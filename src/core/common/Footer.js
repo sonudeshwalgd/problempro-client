@@ -1,13 +1,10 @@
 import React from 'react'
 import { styled } from 'styled-components'
-import logo from "./../../assets/images/common/logo.svg"
-import meta from "./../../assets/images/common/Facebook.svg"
-import instagram from "./../../assets/images/common/Instagram.svg"
-import linkedin from "./../../assets/images/common/Linkdin.svg"
-import twitter from "./../../assets/images/common/Twitter.svg"
-import email from "./../../assets/images/common/Icon.png"
+import instagram from "./../../assets/images/common/instagram (1).png"
+import linkedin from "./../../assets/images/common/linkedin (1).png"
+import twitter from "./../../assets/images/common/twitter.png"
 import call from "./../../assets/images/common/Icon (1).png"
-import address from "./../../assets/images/common/Icon (2).png"
+import youtube from "./../../assets/images/common/youtube (1).png"
 import { Link } from 'react-router-dom'
 
 
@@ -17,64 +14,28 @@ export default function Footer() {
     <Wrapper>
       <div>
         <div className='top'>
-        <ul>
-          <li>
-            <img className='logo' src={logo}/>
-            <p>Reeroute: India's Fastest Truck Booking Platform!</p>
-            <div className='social'>
-              <h4>Follow us on</h4>
-              <div>
-                <a href="#" className='link'><img src={instagram}/></a>
-                <a href="#" className='link'><img src={meta}/></a>
-                <a href="#" className='link'><img src={twitter}/></a>
-                <a href="#" className='link'><img src={linkedin}/></a>
-              </div>
+          <div className="left">
+            <h4 className="heading">Newsletter</h4>
+            <div className="input-wrapper">
+              <input type="text"  placeholder='Enter Your Email'/>
+              <button className='primary-btn'>Subscribe</button>
             </div>
-          </li>
-          <li>
-            <Link className='link'>About Us</Link >
-            <Link className='link'>How it Works</Link >
-            <Link className='link'>Download App</Link >
-            <Link className='link'>Contact</Link >
-          </li>
-          <li>
-            <Link className='link'>Careers</Link>
-            <Link className='link'>Terms & Conditions</Link>
-            <Link className='link'>Privacy Policy</Link>
-          </li>
-          <li className='icon-text'>
-            <div>
-              <div>
-                <img src={email}/>
-              </div>
-              <div>
-                <p>Email</p>
-                <p>contact@logistics.com</p>
-              </div>
-            </div>
-            <div>
-              <div>
-                <img src={call}/>
-              </div>
-              <div>
-                <p>Email</p>
-                <p>contact@logistics.com</p>
-              </div>
-            </div>
-            <div>
-              <div>
-                <img src={address}/>
-              </div>
-              <div>
-                <p>Email</p>
-                <p>contact@logistics.com</p>
-              </div>
-            </div>
-          </li>
-        </ul>
+          </div>
+          <div className="right">
+            <p>Privacy Policy</p>
+            <p>Terms And Conditions </p>
+            <p>Support</p>
+          </div>
         </div>
+        <hr/>
         <div className='bottom'>
-          <p >Copyright © ReeRoute | Designed by Jethi Tech</p>
+          <p className="left">© 2023 Problem Pro</p>
+          <div className="right">
+            <a><img src={twitter} /></a>
+            <a><img src={linkedin} /></a>
+            <a><img src={youtube} /></a>
+            <a><img src={instagram} /></a>
+          </div>
         </div>
       </div>
     </Wrapper>
@@ -83,60 +44,68 @@ export default function Footer() {
 const Wrapper=styled.div`
 width:100vw;
 position: relative;
-background-color: #2A4F6D;
-color: white;
+background-color: #D7F7FD;
+padding-top: 92px;
 &>div{
   position: relative;
   max-width: 1196px;
   margin: auto;
-  p{
-  font-size: 14px;
-}
-.link{
-    font-size: 14px;
-    text-decoration: none;
-    color: white;
 
-  }
   .top{
-    padding-top: 140px ;
-    padding-bottom: 50px ;
-    ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    .left{
       display: flex;
-      list-style: none;
-      justify-content: space-between;
-      &>li{
+      flex-direction: column;
+      gap: 10px;
+      .heading{
+        color: #03256C;
+        font-family: 'Judson',serif;
+        font-size: 26px;
+      }
+      .input-wrapper{
         display: flex;
-        flex-direction: column;
         gap: 20px;
-        .logo{
-          width: 100px;
-          margin-top: -46px;
-        }
-        .social{
-          padding:10px 0;
-          div{
-            padding:10px 0;
-            display: flex;
-            gap: 12px;
-          }
+        input{
+          width: 300px;
+          background-color: white;
+          border-radius: 30px;
+          border: none;
+          outline: none;
+          padding-left: 20px;
         }
       }
-      &>.icon-text{
-        &>div{
-            display: flex;
-            gap: 30px;
-          }
-      }
+    }
+    .right{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
     }
 
   }
   .bottom{
-    padding: 20px 0;
-    border-top: 1px solid  #4E5683;
-    p{
-      text-align: center;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .left{
+      color: #2E3537;
+      font-size: 12px;
+      font-weight: 700;
     }
+    .right{
+      display: flex;
+      gap: 10px;
+      img{
+        height: 24px;
+      }
+    }
+  }
+  .primary-btn{
+    padding: 10px 32px;
+
   }
 }
 
