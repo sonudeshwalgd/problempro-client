@@ -1,7 +1,9 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { styled } from "styled-components";
+import { utils } from "../../../../core/utils";
 
-export default function SearchSection() {
+export default function SearchSection({isGeneratedResult}) {
+
 
     const grade=useRef()
     const subject=useRef()
@@ -11,11 +13,12 @@ export default function SearchSection() {
     const responseTypeB=useRef()
     const responseTypeC=useRef()
 
-    const handlerGenerator=()=>{
-        const payload="class "+grade.current.value+" subject "+subject.current.value+ " , "+description.current.value+ (responseTypeA.current.checked ? " question of free response ":"" )+ (responseTypeB.current.checcked ? " question of MCQ type ":"") +(responseTypeC.current.checked ? " question of true / false type":"") +(answerKey.current.checked ? " and give answer key too ":"")  
+    const handlerGenerator=async()=>{
+        const payload="class "+grade.current.value+" subject "+subject.current.value+ " , "+description.current.value+ (responseTypeA.current.checked ? " question of free response ":"" )+ (responseTypeB.current.checcked ? " question of MCQ type ":"") +(responseTypeC.current.checked ? " question of true / false type":"") +(answerKey.current.checked ? " and give answer key too ":" and do not give answers ")  
         
-        console.log(payload)
-        
+        const response= await utils.generateAI(payload)
+        console.log( response.data.choices[0].message.content)
+        isGeneratedResult(response.data.choices[0].message.content)
     }
 
   return (

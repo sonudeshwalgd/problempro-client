@@ -1,16 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { styled } from 'styled-components'
 import SearchSection from './SearchSection'
 import Result from './Result'
 
 export default function Index() {
+    const [generatedResult,isGeneratedResult]=useState("")
+
   return (
     <Wrapper>
         <div className="left">
-            <SearchSection/>
+            <SearchSection isGeneratedResult={isGeneratedResult}/>
         </div>
         <div className="right">
-            <Result/>
+            <Result generatedResult={generatedResult}/>
         </div>
     </Wrapper>
   )
