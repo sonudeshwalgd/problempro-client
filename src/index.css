@@ -17,3 +17,6 @@ h1,h2,.title{
 button{
     cursor: pointer;
 }
+a{
+    text-decoration: none;
+}
