@@ -23,7 +23,7 @@ export default function HomepageNavbar() {
           
           <li>
             <NavLink
-              to="/tracker"
+              to="/"
               className={({ isActive, isPending }) =>
                 isPending ? "pending" : isActive ? "active" : ""
               }
@@ -35,7 +35,7 @@ export default function HomepageNavbar() {
           
           <li>
             <NavLink
-              to="/about"
+              to="/feature"
               className={({ isActive, isPending }) =>
                 isPending ? "pending" : isActive ? "active" : ""
               }
@@ -46,7 +46,7 @@ export default function HomepageNavbar() {
           
           <li>
             <NavLink
-              to="/how-it-works"
+              to="/about"
               className={({ isActive, isPending }) =>
                 isPending ? "pending" : isActive ? "active" : ""
               }
@@ -57,7 +57,7 @@ export default function HomepageNavbar() {
           
           <li>
             <NavLink
-              to="/request-form"
+              to="/support"
               className={({ isActive, isPending }) =>
                 isPending ? "pending" : isActive ? "active" : ""
               }
@@ -68,7 +68,7 @@ export default function HomepageNavbar() {
           <li className="gap"/>
           <li>
            <NavLink
-              to="/request-form"
+              to="/signup"
               className={({ isActive, isPending }) =>
                 isPending ? "pending" : isActive ? "active" : ""
               }
@@ -80,7 +80,7 @@ export default function HomepageNavbar() {
           </li>
           <li>
            <NavLink
-              to="/request-form"
+              to="/login"
               className={({ isActive, isPending }) =>
                 isPending ? "pending" : isActive ? "active" : ""
               }
@@ -113,7 +113,8 @@ const Wrapper=styled.div`
       margin: 0 20px;
       white-space: nowrap;
       &>a{
-        color: black;
+        color: white;
+        text-shadow: 0px 4px 5px rgba(0,0,0,.5);
       text-decoration: none;
       font-size: 20px;
       font-weight: 600;

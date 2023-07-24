@@ -81,7 +81,9 @@ padding-top: 92px;
     .right{
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      gap: 24px;
+      font-size: 14px;
+      align-items: flex-end;
     }
 
   }
