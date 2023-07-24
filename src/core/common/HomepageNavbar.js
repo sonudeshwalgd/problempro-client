@@ -66,7 +66,7 @@ export default function HomepageNavbar() {
             </NavLink>
           </li>
           <li className="gap"/>
-          {/* <li>
+          <li>
            <NavLink
               to="/signup"
               className={({ isActive, isPending }) =>
@@ -89,8 +89,8 @@ export default function HomepageNavbar() {
                   Login
               </button>
             </NavLink>
-          </li> */}
-          <li>
+          </li>
+          {/* <li>
            <NavLink
               to="/dashboard"
               className={({ isActive, isPending }) =>
@@ -101,7 +101,7 @@ export default function HomepageNavbar() {
                   Dashboard
               </button>
             </NavLink>
-          </li>
+          </li> */}
         </ul>
 
       </Wrapper>

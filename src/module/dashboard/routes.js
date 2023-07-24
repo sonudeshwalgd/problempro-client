@@ -11,6 +11,7 @@ import Classes from './pages/Classes'
 export const DashboardRoutes=[
   <Route index element={<Profile/>}/>,
   <Route path="classes" element={<Classes/>}/>,
+  <Route path="classes" element={<Classes/>}/>,
 ]
 
 

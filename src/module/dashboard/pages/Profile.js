@@ -1,3 +1,5 @@
-const Profile=()=><h1>Profile</h1>
+import Index from "../container/Profile"
+
+const Profile=()=><Index/>
 
 export default Profile
