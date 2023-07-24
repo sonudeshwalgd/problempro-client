@@ -90,7 +90,7 @@ export default function HomepageNavbar() {
               </button>
             </NavLink>
           </li>
-          {/* <li>
+          <li>
            <NavLink
               to="/dashboard"
               className={({ isActive, isPending }) =>
@@ -101,7 +101,7 @@ export default function HomepageNavbar() {
                   Dashboard
               </button>
             </NavLink>
-          </li> */}
+          </li>
         </ul>
 
       </Wrapper>

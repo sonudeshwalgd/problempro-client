@@ -75,7 +75,7 @@ display: flex;
 align-items: center;
 width: 320px;
 flex-direction: column;
-gap: 50px;
+gap: 30px;
 align-items: center;
 .sidebar{
   padding: 20px;
@@ -113,12 +113,16 @@ align-items: center;
   }
 }
 .main{
-  font-size: 36px;
+  font-size: 26px;
   color: white;
   text-decoration: none;
   display: flex;
   align-items: center;
-  gap: 20px;
+  align-self: flex-start;
+  gap: 4px;
+  img{
+    height: 24px;
+  }
 }
 .flex-1-c{
   flex-direction: column;

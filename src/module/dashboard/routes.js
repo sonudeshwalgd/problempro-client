@@ -24,8 +24,6 @@ export  function DashboardOutlet() {
             <Outlet/>
           </div>
         </Main>
-    
-    
     </>
   )
 }
@@ -38,7 +36,7 @@ background-image:linear-gradient( to right ,#47CFE9,#EDFAFD) ;
 min-height: 100vh;
 padding: 40px 50px ;
 .outlet{
-  padding-top: 40px;
+  padding-top: 10px;
   flex:1;
 }
 `
