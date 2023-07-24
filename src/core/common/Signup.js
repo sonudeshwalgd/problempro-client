@@ -1,6 +1,7 @@
 import React from 'react'
 import { styled } from 'styled-components'
 import background from "./../../assets/images/common/loginbackground.png"
+import user from "./../../assets/images/common/User.png"
 import email from "./../../assets/images/common/Layer 2.png"
 import password from "./../../assets/images/common/Vector (1).png"
 
@@ -8,8 +9,16 @@ export default function Signup() {
   return (
     <Wrapper>
         <div className="body">
-            <h1>Log In</h1>
+            <h1>Sign Up</h1>
             <div className="wrapper">
+                <div className="input-label-wrapper">
+                    <label>Name</label>
+                    <div className="input-wrapper">
+                     <img src={user} alt="" />   
+                     <hr />
+                     <input type="text" placeholder='Enter Your Name' />
+                    </div>
+                </div>
                 <div className="input-label-wrapper">
                     <label>Email</label>
                     <div className="input-wrapper">
@@ -27,9 +36,8 @@ export default function Signup() {
                     </div>
 
                 </div>
-                <p className='forget'>Forget password?</p>
-                <button className='btn-2'>Log In</button>
-                <p className='signup'>Don't have an account?<span>sign up</span></p>
+                <button className='btn-2'>Sign Up</button>
+                <p className='signup'>Already have an account?<span>Login</span></p>
 
             </div>
         </div>

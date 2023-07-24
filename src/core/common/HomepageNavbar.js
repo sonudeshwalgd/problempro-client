@@ -13,7 +13,7 @@ export default function HomepageNavbar() {
         <NavLink
           to="/"
           className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "active" : ""
+            isPending ? "" : isActive ? "" : ""
           }
         >
           <img style={{visibility:"hidden"}} src={logo} />
@@ -70,7 +70,7 @@ export default function HomepageNavbar() {
            <NavLink
               to="/signup"
               className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "active" : ""
+                isPending ? "" : isActive ? "" : ""
               }
             >
               <button className="primary-btn">
@@ -82,7 +82,7 @@ export default function HomepageNavbar() {
            <NavLink
               to="/login"
               className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "active" : ""
+                isPending ? "" : isActive ? "" : ""
               }
             >
               <button className="primary-btn">
