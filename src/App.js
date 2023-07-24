@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import  {HomepageRoutes, HomePageOutlet } from './module/homepage/Routes.js';
-import { HomepageBanner } from './module/homepage/pages/HomepageBanner';
+import { DashboardOutlet, DashboardRoutes } from './module/dashboard/routes';
 
 function App() {
   return (
@@ -9,6 +9,9 @@ function App() {
     <Routes>
       <Route path='/' element={<HomePageOutlet/>}>
         {HomepageRoutes}
+      </Route>
+      <Route path='/dashboard' element={<DashboardOutlet/>}>
+        {DashboardRoutes}
       </Route>
     </Routes>
     </>

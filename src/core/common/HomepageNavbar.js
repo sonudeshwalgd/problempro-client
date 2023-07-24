@@ -66,7 +66,7 @@ export default function HomepageNavbar() {
             </NavLink>
           </li>
           <li className="gap"/>
-          <li>
+          {/* <li>
            <NavLink
               to="/signup"
               className={({ isActive, isPending }) =>
@@ -87,6 +87,18 @@ export default function HomepageNavbar() {
             >
               <button className="primary-btn">
                   Login
+              </button>
+            </NavLink>
+          </li> */}
+          <li>
+           <NavLink
+              to="/dashboard"
+              className={({ isActive, isPending }) =>
+                isPending ? "" : isActive ? "" : ""
+              }
+            >
+              <button className="primary-btn">
+                  Dashboard
               </button>
             </NavLink>
           </li>
