@@ -15,10 +15,9 @@ export default function SearchSection({isGeneratedResult}) {
 
     const handlerGenerator=async()=>{
         const payload="class "+grade.current.value+" subject "+subject.current.value+ " , "+description.current.value+ (responseTypeA.current.checked ? " question of free response ":"" )+ (responseTypeB.current.checked ? " question of MCQ type ":"") +(responseTypeC.current.checked ? " question of true / false type":"") +(answerKey.current.checked ? " and give answer key too ":" and do not give answers ")  
-        console.log(payload)
-        // const response= await utils.generateAI(payload)
-        // console.log( response.data.choices[0].message.content)
-        // isGeneratedResult(response.data.choices[0].message.content)
+        const response= await utils.generateAI(payload)
+        console.log( response.data.choices[0].message.content)
+        isGeneratedResult(response.data.choices[0].message.content)
     }
 
   return (
