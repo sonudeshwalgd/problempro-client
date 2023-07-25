@@ -14,10 +14,11 @@ export default function SearchSection({isGeneratedResult}) {
     const responseTypeC=useRef()
 
     const handlerGenerator=async()=>{
-        const payload="class "+grade.current.value+" subject "+subject.current.value+ " , "+description.current.value+ (responseTypeA.current.checked ? " question of free response ":"" )+ (responseTypeB.current.checcked ? " question of MCQ type ":"") +(responseTypeC.current.checked ? " question of true / false type":"") +(answerKey.current.checked ? " and give answer key too ":" and do not give answers ")  
-        const response= await utils.generateAI(payload)
-        console.log( response.data.choices[0].message.content)
-        isGeneratedResult(response.data.choices[0].message.content)
+        const payload="class "+grade.current.value+" subject "+subject.current.value+ " , "+description.current.value+ (responseTypeA.current.checked ? " question of free response ":"" )+ (responseTypeB.current.checked ? " question of MCQ type ":"") +(responseTypeC.current.checked ? " question of true / false type":"") +(answerKey.current.checked ? " and give answer key too ":" and do not give answers ")  
+        console.log(payload)
+        // const response= await utils.generateAI(payload)
+        // console.log( response.data.choices[0].message.content)
+        // isGeneratedResult(response.data.choices[0].message.content)
     }
 
   return (
@@ -25,7 +26,7 @@ export default function SearchSection({isGeneratedResult}) {
       <Wrapper>
         <div className="header">
           <h3>Enter Text</h3>
-          <button className="primary-btn" >Upload PDF</button>
+          <button className="primary-btn" >Upload PDF </button>
         </div>
         <div className="wrapper">
           <div className="input-label-wrapper">
@@ -50,7 +51,7 @@ export default function SearchSection({isGeneratedResult}) {
             <label>Question Type</label>
             <div className="radio-label-wrapper">
               <div className="radio-wrapper">
-                <input id="free" name="responseType" type="radio" value="free" ref={responseTypeA} />
+                <input id="free" name="responseType" type="radio" defaultChecked value="free" ref={responseTypeA} />
                 <label htmlFor="free">Free Response</label>
               </div>
               <div className="radio-wrapper">
